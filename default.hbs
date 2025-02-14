@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
     <script>
-        if (localStorage.getItem('alto_dark' == 'true')) {
+        document.documentElement.classList.add('no-transition');
+        if (localStorage.getItem('alto_dark') === 'true') {
             document.documentElement.classList.add('dark-mode');
         }
     </script>
@@ -114,6 +115,14 @@
     crossorigin="anonymous">
 </script>
 <script src="{{asset "built/main.min.js"}}"></script>
+
+<script>
+    // Remove the no-transition class after the page has fully loaded
+    window.addEventListener('load', function () {
+        document.documentElement.classList.remove('no-transition');
+    });
+</script>
+
 
 {{ghost_foot}}
 

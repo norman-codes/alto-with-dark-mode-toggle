@@ -1,18 +1,28 @@
 var html = $('html');
 
 $(function () {
-    darkMode();
+    applyDarkMode();
+    darkModeToggle();
     carousel();
 });
 
-function darkMode() {
+function applyDarkMode() {
+    // Check if 'alto_dark' is set to true in localStorage and add the dark-mode class if it is
+    if (localStorage.getItem('alto_dark') === 'true') {
+        html.addClass('dark-mode');
+    }
+}
+
+function darkModeToggle() {
     $('.toggle-track').on('click', function () {
+        // Toggle the 'dark-mode' class on the HTML element
+        html.toggleClass('dark-mode');
+        
+        // Update localStorage with the current state of dark mode
         if (html.hasClass('dark-mode')) {
-            html.removeClass('dark-mode');
-            localStorage.setItem('alto_dark', false);
-        } else {
-            html.addClass('dark-mode');
             localStorage.setItem('alto_dark', true);
+        } else {
+            localStorage.setItem('alto_dark', false);
         }
     });
 }
