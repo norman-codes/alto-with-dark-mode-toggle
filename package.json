@@ -1,23 +1,27 @@
 {
-    "name": "modified-alto",
-    "description": "A Ghost theme",
-    "version": "0.0.2",
+    "name": "alto-with-dark-mode-toggle",
+    "description": "The Alto Ghost theme, but with dark mode as a toggle in the header",
+    "version": "1.0.0",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "norman",
+        "email": "contact@whoisnorman.com",
+        "url": "https://whoisnorman.com/"
     },
     "keywords": [
         "ghost",
         "theme",
-        "ghost-theme"
+        "ghost-theme",
+        "alto",
+        "alto-theme",
+        "dark-mode-toggle",
+        "dark-mode"
     ],
-    "docs": "https://alto.ghost.io/about/",
+    "docs": "https://github.com/norman-codes/alto-with-dark-mode-toggle/",
     "config": {
         "posts_per_page": 5,
         "image_sizes": {
