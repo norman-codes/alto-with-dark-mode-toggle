@@ -1,7 +1,7 @@
 {
     "name": "alto-with-dark-mode-toggle",
     "description": "The Alto Ghost theme, but with dark mode as a toggle in the header",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": true,
     "engines": {
         "ghost": ">=5.0.0"
